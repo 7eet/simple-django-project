@@ -7,7 +7,7 @@ sudo docker build -t 7eet/testing-project .
 sudo docker run 7eet/testing-project > resultOfPythonTest 2>&1
 
 #reading the lastline of file 
-finalResult=$(tail -1 resultOfTest )
+finalResult=$(tail -1 resultOfPythonTest )
 #echo "$finalResult"
 
 if [ "$finalResult" == "OK" ];
